@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .left-section {
+      width: 60%;
+      background: linear-gradient(to bottom, #ADD8E6, #00008B);
+      /* Replace with actual background image containing paper airplanes and curved line:
+         background-image: url('path/to/background-image.jpg'); */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .left-section h1 {
+      position: absolute;
+      right: 30%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #FFFFFF;
+      text-align: right;
+      padding-right: 20px;
+    }
+
+    .right-section {
+      width: 40%;
+      background-color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .login-form {
+      width: 300px;
+      text-align: center;
+    }
+
+    .login-form h1 {
+      font-weight: 700;
+      font-size: 24px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .login-form p {
+      font-weight: 400;
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 20px;
+    }
+
+    .login-form label {
+      display: block;
+      text-align: left;
+      font-weight: 500;
+      font-size: 12px;
+      color: #333333;
+      margin-bottom: 5px;
+    }
+
+    .login-form input[type="email"], .login-form input[type="password"] {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      padding: 0 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    .checkbox-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-link div {
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox-link input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .checkbox-link label {
+      font-size: 12px;
+      color: #333333;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .checkbox-link a {
+      font-size: 12px;
+      color: #333333;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .login-form button {
+      width: 100%;
+      height: 40px;
+      background-color: #00AEEF;
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .airplane-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+      background-image: url('path/to/airplane-icon.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h1>app-au.bitdam</h1>
+    </div>
+    <div class="right-section">
+      <div class="login-form">
+        <h1>WELCOME TO PORTAL</h1>
+        <p>PLEASE LOGIN TO YOUR ACCOUNT</p>
+        <form>
+          <label for="email">EMAIL ADDRESS</label>
+          <input type="email" id="email" name="email">
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password">
+          <div class="checkbox-link">
+            <div>
+              <input type="checkbox" id="remember" name="remember">
+              <label for="remember">REMEMBER ME</label>
+            </div>
+            <a href="#">FORGOT PASSWORD</a>
+          </div>
+          <button type="submit">LOGIN</button>
+        </form>
+      </div>
+      <div class="airplane-icon"></div>
+    </div>
+  </div>
+</body>
+</html>
